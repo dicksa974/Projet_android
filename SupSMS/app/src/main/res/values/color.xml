@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="header_background">#00734F</color>
+    <color name="body_background">#419F2E</color>
+    <color name="footer_background">#222224</color>
+</resources>

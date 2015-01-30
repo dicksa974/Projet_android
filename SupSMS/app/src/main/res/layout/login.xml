@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5">
+
+    <include layout="@layout/header"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/background"
+        android:paddingBottom="40dp">
+
+        <!--  Email Label -->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginTop="50dp"
+            style="@style/text_view_style"/>
+
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:singleLine="false"
+            android:textSize="20sp"
+            style="@style/text_view_style"/>
+        <!--  Password Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            style="@style/text_view_style"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:singleLine="false"
+            android:password="true"
+            android:textSize="20sp"
+            style="@style/text_view_style"/>
+        <!-- Login button -->
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnLogin"
+            android:src="@drawable/btn_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+        <!-- Link to Registration Screen -->
+        <TextView android:id="@+id/link_to_register"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="New to SupSms? Register here"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:textColor="#0b84aa"/>
+    </LinearLayout>
+
+    <include layout="@layout/footer"></include>
+
+</LinearLayout>
